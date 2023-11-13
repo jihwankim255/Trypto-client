@@ -16,9 +16,9 @@ export async function fetchMyPlan(walletAccount?: WalletAccount) {
     .then(({ data }) => data);
 }
 
-export async function fetchAllPlan() {
-  return api.get("/trip/allplan").then(({ data }) => data);
-}
+// export async function fetchAllPlan() {
+//   return api.get("/trip/allplan").then(({ data }) => data);
+// }
 
 export async function createPlan(data: TripPlanFormData) {
   return api.post("/trip/myplan", data).then(({ data }) => data);
